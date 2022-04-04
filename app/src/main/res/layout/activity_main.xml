@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokedex_phone_wallpaper_part_1_by_thedeeman222official_on_"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDatosPokemon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Pokédex"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvIngrese"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="Por favor ingrese el numero para buscar al pokémon en la base de datos de la Pokédex."
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtxNumeroPokemon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="N°"/>
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Datos del Pokémon"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgPokemon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEncabezadoNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--------------Nombre--------------"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEncabezadoEXP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Experiencia Base:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="00"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEncabezadoPeso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Peso:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="00Kg"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEncabezadoAltura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Altura:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAltura"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="00cm"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
